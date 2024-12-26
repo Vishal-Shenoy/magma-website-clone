@@ -1,0 +1,272 @@
+.page1Video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.menuIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.bookDemo {
+  height: 40px;
+  border-radius: 20px;
+  width: 150px;
+  border: solid white 1px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: jost;
+}
+
+.hoverEffectText {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  color: rgb(8, 63, 220);
+  transition: .3s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: -50%;
+}
+
+.hoverEffect {
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: .3s;
+  background-color: white;
+  z-index: 10;
+}
+
+
+.bookDemo:hover .hoverEffect {
+  height: 100%;
+}
+
+
+.bookDemo:hover .hoverEffectText {
+  top: 50%;
+}
+
+.learnMore {
+  height: 50px;
+  width: 180px;
+  background-color: white;
+  border-radius: 25px;
+  font-family: jost;
+  font-size: 16px;
+  color: rgb(8, 63, 220);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.learnMoreHoverEffect {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: -50%;
+  z-index: 11;
+  color: white;
+  transition: .3s;
+}
+
+.backDrop {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: .3s;
+  z-index: 10;
+}
+
+.learnMore:hover .backDrop {
+  height: 100%;
+}
+
+.learnMore:hover .learnMoreHoverEffect {
+  top: 50%;
+}
+
+#outerCircle {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid white 2px;
+}
+
+#innerCircle {
+  height: 7vw;
+  width: 7vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid white 2px;
+}
+
+.bookDemoFooter {
+  height: 40px;
+  border-radius: 20px;
+  width: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: jost;
+  background-color: rgb(8, 63, 220);
+}
+
+.hoverEffectTextFooter {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  color: rgb(8, 63, 220);
+  transition: .3s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: -50%;
+}
+
+.hoverEffectFooter {
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: .3s;
+  background-color: white;
+  z-index: 10;
+}
+
+
+.bookDemoFooter:hover .hoverEffectFooter {
+  height: 100%;
+}
+
+
+.bookDemoFooter:hover .hoverEffectTextFooter {
+  top: 50%;
+}
+
+.footerHover{
+  position: relative;
+  z-index: 0;
+}
+
+.footerHover>span{
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  background-color:rgb(8, 63, 220) ;
+  transition: .5s;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.footerHover:hover.footerHover>span{
+  height: 100%;
+}
+.footerTextUnderline{
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerTextUnderline>span{
+  height: 0px;
+  width: 0%;
+  position: absolute;
+  /* left: 50%; */
+  bottom: 0px;
+  /* transform: translate(-50%,0); */
+  background-color: white;
+  transition: .5s ease-in-out;
+  
+}
+
+.footerTextUnderline:hover.footerTextUnderline>span{
+  height: 2px;
+  width: 100%;
+}
+
+#footerInput{
+  color: white;
+  background-color: transparent;
+  border-bottom: solid white 1px;
+  outline: none;
+  margin-top: 10px;
+}
+#footerInput::placeholder{
+  color: white;
+  font-size: 12px;
+}
+.page12Img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.page12Img:hover{
+  scale: 1.2;
+}
+
+.page9Img{
+  width: 100%;
+  height: 100%;
+}
+
+.page10CardImg{
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓ ';
+  margin-right: 10px;
+}
